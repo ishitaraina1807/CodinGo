@@ -216,6 +216,7 @@ const Landing = () => {
               customInput={customInput}
               setCustomInput={setCustomInput}
             />
+            <div className="flex items-center gap-12">
             <button
               onClick={handleCompile}
               disabled={!code}
@@ -226,12 +227,15 @@ const Landing = () => {
             >
               {processing ? "Processing..." : "Compile and Execute"}
             </button>
+            {outputDetails && <OutputDetails outputDetails={outputDetails} />}
+            </div>
+           
           </div>
-          {outputDetails && <OutputDetails outputDetails={outputDetails} />}
+          
         </div>
       </div>
       <footer>
-        <div className="flex justify-center items-center mt-[-30px]">
+        <div className="flex justify-center items-center">
           <p className="text-gray-800 font-normal text-sm">
             Made with love by <a className="text-indigo-600 font-semibold" href="https://github.com/ishitaraina1807" target="blank">Ishita Raina</a>
           </p>
