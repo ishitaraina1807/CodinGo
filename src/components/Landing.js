@@ -31,10 +31,6 @@ const Landing = () => {
     console.log("selected Option...", sl);
     setLanguage(sl);
   };
-  const [selectedTheme, setSelectedTheme] = useState({
-    value: "oceanic-next",
-    label: "Oceanic Next"
-  });
 
   useEffect(() => {
     if (enterPress && ctrlPress) {
@@ -229,9 +225,7 @@ const Landing = () => {
             </button>
             {outputDetails && <OutputDetails outputDetails={outputDetails} />}
             </div>
-           
-          </div>
-          
+          </div> 
         </div>
       </div>
       <footer>
