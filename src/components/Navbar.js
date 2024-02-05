@@ -10,7 +10,7 @@ export default function NavBar() {
     return (
         <div className='bg-[#5252D4] w-full h-15 flex lg:justify-around items-center text-white font-montserrat text-base font-normal leading-normal relative'>
             <div className='w-36 h-16 shadow-[5px_5px_0px_0px_rgba(0,0,0)] lg:mx-40 flex-shrink-0 rounded-b-lg bg-gray-200 flex justify-center items-center'>
-                <h1 className="text-[#5252D4] font-montserrat text-2xl font-bold leading-[1.309] tracking-[0.48] uppercase">CodinGo</h1>
+                <h1 className="text-[#5252D4] font-montserrat text-2xl font-bold leading-[1.309] tracking-[0.48]">CodinGo</h1>
             </div>
             <div className={`lg:flex text-white lg:flex-row top-12 lg:top-0 lg:items-center lg:justify-around lg:space-x-4 absolute left-0 right-0 bg-[#5252D4] lg:bg- z-50 ${isOpen ? 'flex flex-col' : 'hidden'} lg:relative lg:flex-row lg:visible w-full lg:z-0`}>
                 <p className='lg:py-0 py-2 lg:px-0 md:text-xl px-4 text-center lg:text-left'>Compile and Execute codes in 40+ languages</p>
