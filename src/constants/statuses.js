@@ -17,7 +17,7 @@ export const statuses = [
   },
   {
     id: 5,
-    description: "Time Limit Exceeded",
+    description: "Time Limit Exceeded (TLE) ",
   },
   {
     id: 6,
